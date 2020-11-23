@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made pratham - No Copyright -->
+  <title>"Vatsal Singhania"</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font-size: 19px;
+      line-height: 1.8;
+      color: #303030;
+	  font-weight: 400;
+	  
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background:url('chess1.jpg');
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+ 
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  .dropbtn {
+    background-color:#ff8300;
+    color: white;
+    width: 1420px;
+    padding: 19px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+	
+    position: relative;
+    display:block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width:1420px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+ .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+	.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="websitee.html.html">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="chess.html.html">Chess</a></li>
+        <li><a href="internship.html.html">Internship</a></li>
+        <li><a href="ss.html.html">Social Services</a></li>
+       
+		<li><a href="cs.html.html">CS Engagement</a></li>
+        <li><a href="resume.html.html">Resume</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1 font face="kaushan script">Chess</h1> 
+  
+</div>
+
+<!-- Container (About Section) -->
+ 
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <u><h2>Early career as a chess player</h2></u>
+      <h4>I started playing chess when I was 6 years old. My school at the time had just started a chess coaching program in the free period and my elder brother had enrolled for it. He becam very interested in the game and started calling a private coach in our home. I remember just going and sitting right next to him whenever his class was there and I got very interested in the game. My parents asked me if I also wanted to learn and then I started training with my elder brother as well.</h4><br>
+      <br>
+	  <u><h2>Achievements</h2></u>
+	  <ul>
+	  <li>1st place in First Saturday IM Febrary 2020 Chess Championship in Budapest,Hungary in 2020</li>
+	  <li>1st place in Marienbad Open Round-robin IM-B2 Chess Championship in Marianske Lazne, Czech Republic in 2020</li>
+	  <li>Achieved my first IM norm in Marienbad Open Round-robin IM-B2 Chess Championship in Marianske Lazne, Czech Republic in 2020</li>
+	  <li>Individual 1st in Sri Lanka Inter Club Super League Chess Championship in Delkanda, Sri Lanka in 2019</li>
+	  <li>Team 2nd in Sri Lanka Inter Club Super League Chess Championship in Delkanda, Sri Lanka in 2019</li>
+	  <li>70th place in World Junior Chess Championship U-20 Open in New Delhi, India in 2019</li>
+	  <li>37th place in World Youth Chess Championship U-18 Open in Mumbai, India in 2019</li>
+	  <li>5th place in Western Asian Youth Chess Championship U-18 Open in New Delhi, India in 2019</li>
+	  <li>5th place in Western Asian Blitz Youth Chess Championship U-18 Open in New Delhi, India in 2019</li>
+	  <li>5th place in Western Asian Rapid Youth Chess Championship U-18 Open in New Delhi, India in 2019</li>
+	  <li>7th place in Asian Youth Chess Championship U-18 Open in Waskaduwa, Sri Lanka in 2019</li>
+	  <li>1st place in Asian Youth Team Standard Chess Championship U-18 Open in Waskaduwa, Sri Lanka in 2019</li>
+	  <li>65th place in World Youth Chess Championship U-16 Open in Chalkidiki, Greece in 2018</li>
+	  <li>2nd place in Asian Youth Chess Championship U-16 Open in Chiangmai, Thailand in 2018</li>
+	  <li>1st place in Asian Youth Team Standard Chess Championship U-16 Open in Chiangmai, Thailand in 2018</li>
+	  <li>1st place in Asian Youth Team Blitz Chess Championship U-16 Open in Chiangmai, Thailand in 2018</li>
+	  <li>1st place in Asian Youth Team Rapid Chess Championship U-16 Open in Chiangmai, Thailand in 2018</li>
+	  <li>1st place in CBSE National Team Chess Campionship in Gwalior, Madhya Pradesh in 2018</li>
+	  <li>3rd place in junior category in Aeroflot Open Chess Championship C-category in Moscow, Russia in 2018</li>
+	  <li>41st place in World Youth Chess Championship U-16 Open in Montevideo, Uruguay in 2017</li>
+	  <li>1st place in Commonwealth Chess Championship U-16 Open in New Delhi, India in 2017</li>
+	  </ul>
+      <br>
+    </div>
+   <div class="col-sm-4" >
+ <img src="1.png" height="400px" width="400px">
+    </div>
+     
+  </div>
+</div>
+</body>
+</html>
